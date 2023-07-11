@@ -9,14 +9,14 @@ public struct User: Hashable, Equatable {
     var isFavourite: Bool = false
     var fullName: String { "\(firstName) \(lastName)" }
     
-//    public init(id: Int, email: String = "", firstName: String = "", lastName: String = "", avatar: URL = URL(filePath: ""), isFavourite: Bool = false) {
-//        self.id = id
-//        self.email = email
-//        self.firstName = firstName
-//        self.lastName = lastName
-//        self.avatar = avatar
-//        self.isFavourite = isFavourite
-//    }
+    public init(id: Int, email: String = "", firstName: String = "", lastName: String = "", avatar: URL = URL(filePath: ""), isFavourite: Bool = false) {
+        self.id = id
+        self.email = email
+        self.firstName = firstName
+        self.lastName = lastName
+        self.avatar = avatar
+        self.isFavourite = isFavourite
+    }
 }
 
 extension User: Decodable {
